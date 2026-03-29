@@ -455,6 +455,39 @@ mark {
 .no-results .emoji { font-size: 40px; margin-bottom: 12px; }
 
 /* ============ RESPONSIVE ============ */
+/* ============ NAVBAR ============ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 15, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 12px 0;
+}
+.navbar-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 18px;
+}
+.navbar-brand img {
+  height: 32px;
+  width: auto;
+  border-radius: 4px;
+}
+
 @media (max-width: 640px) {
   .hero { padding: 50px 0 32px; }
   .stats-bar { gap: 8px; }
@@ -476,6 +509,15 @@ mark {
   <div class="orb"></div>
 </div>
 <div class="grid-overlay"></div>
+
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <img src="logo1.jpeg" alt="Radix Logo">
+      <span>Curriculum</span>
+    </a>
+  </div>
+</nav>
 
 <div class="main-container">
   <!-- Hero Section -->
